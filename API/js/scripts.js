@@ -1,13 +1,12 @@
-
 var contenido = document.querySelector('#contenido')
-        function traer() {
-            fetch('https://randomuser.me/api/')
-            .then(res => res.json())
-            .then(data => {
+function traer() {
+  fetch('https://randomuser.me/api/')
+    .then(res => res.json())
+    .then(data => {
 
-              
-                console.log(data.results['0'])
-                contenido.innerHTML = `
+
+      console.log(data.results['0'])
+      contenido.innerHTML = `
                 <div class="foto">
                 <img src="${data.results['0'].picture.large}" width="100px" class="img-fluid rounded-circle" name> 
                 </div>
@@ -17,6 +16,6 @@ var contenido = document.querySelector('#contenido')
                 <p>email: ${data.results['0'].email}</p>
                 </div>
                 `
-            });
-            
-        }
+    });
+
+}
