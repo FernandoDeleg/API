@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PELICULAS</title>
+    <title>Buscador</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
@@ -12,49 +12,46 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!--  <a class="navbar-brand" href="#">Navbar</a>-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="container-fluid">
-                <a class="navbar-brand text-center" href="#"> PELICULAS</a>
+                <a class="navbar-brand text-center" href="#"> Nombres</a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
                         </li>
                     </ul>
-                    <form class="form.inline my-2 my-lg-0" @submit.prevent="getMovies">
-                        <input class="form-control mr-sm-2" v-model="query" placeholder="Ingrese el titulo..."/>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar Pelicula</button>
+                    <form class="form.inline my-2 my-lg-0" @submit.prevent="getName">
+                        <!-- <input class="form-control mr-sm-2" v-model="query" placeholder="Titulo..."/> -->
+
+                           <button class="btn btn-outline-success my-2 my-sm-0" onclick=traer() type="submit">Buscar</button>
+                           
+                        
+                        
+                           <!--  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button >-->
                     </form>
                 </div>
             </div>
         </nav>
 
-        <header>
+        
+       <header>
 			<div class="hero">
 				<div class="container-info">
 					<h1 class="text-center">Resultados:</h1>
 				</div>
-				<div class="container-fluid">
-					<div class="row" id="movies"></div>
-				</div>	
+                <div class="resultado">
+                    <div class="mt-5" id="contenido"></div>
 			</div>
-		</header>
+
+		</header> 
 
 	</div>
-		
-
-
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-  <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
 
