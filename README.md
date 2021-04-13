@@ -7,13 +7,22 @@ REST se compone de una lista de reglas que se deben cumplir en el diseño de la 
 Hablaremos de servicios web restful si cumplen la arquitectura REST.
 Restful = adjetivo, Rest = Nombre
 
- 
+ ![Imagen1](https://user-images.githubusercontent.com/56567621/114504353-5c6e7380-9bf4-11eb-9266-45a3b67d9b99.png)
+
 
 2.	Generar una llave para consumir los servicios web de la API (opcional, depende de la API seleccionada).
 Para esta práctica no fue necesario una llave para consumir la API puesto que utilizamos una API publica con la que podemos obtener diferentes nombres, apellidos y correos todo esto será consumido por la siguiente API:  https://randomuser.me/api/
+
+
+
 3.	Crear un repositorio en GitHub con el nombre “Practica01 – Consumo de APIs en la nube”
 
- 
+
+![Imagen4](https://user-images.githubusercontent.com/56567621/114504678-ddc60600-9bf4-11eb-80ec-e07ddad54380.png)
+
+
+
+
 
 
 4.	Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar información y visualizar toda la información disponible a través de la API.
@@ -137,15 +146,21 @@ Por último, en el archivo styles.css es en donde vamos a darle cirto estilo a n
 
 5.	Realizar varios commits en la herramienta GitHub que demuestren el desarrollo de la aplicación.
 
- 
+ ![Imagen2](https://user-images.githubusercontent.com/56567621/114504412-7445f780-9bf4-11eb-85a6-86007e86cf08.png)
 
 RESULTADO(S) OBTENIDO(S):
 •	Al finalizar esta práctica se obtuvo el siguiente resultado ya consumiendo la API que se encontró 
- 
+
+ ![Imagen3](https://user-images.githubusercontent.com/56567621/114504746-f46c5d00-9bf4-11eb-839e-11562bc45f91.png)
 
 En esta aplicación lo que se debe hacer es dar click en el botón de buscar y se empezará a hacer uso de la API que estamos utilizando y de esta API obtenemos una foto, nombre, apellido y el email de una persona que está en esa API.
+
+
 CONCLUSIONES:
-•	El consumo de una API tiene su complejidad ya que no todas se utilizan de la misma forma es decir el código de implementación varia dependiendo de la API que pretendamos usar.
-•	Con esta practica se puede dar cuente que para poder llevar una buena aplicación con el consumo de APIS debemos de apoyarnos mucho en la información que podamos obtener de la API que queramos utilizar.
+El consumo de una API tiene su complejidad ya que no todas se utilizan de la misma forma es decir el código de implementación varia dependiendo de la API que pretendamos usar.
+Con esta practica se puede dar cuente que para poder llevar una buena aplicación con el consumo de APIS debemos de apoyarnos mucho en la información que podamos obtener de la API que queramos utilizar.
+
+
+
 RECOMENDACIONES: Se recomienda tener una buena pagina que contenga APIS que se puedan consumir ya que no todas están funcionando.
 Desarrollar una aplicación que consuma una API es fácil si se cuenta con una buena documentación.
